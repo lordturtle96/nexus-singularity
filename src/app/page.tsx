@@ -1,102 +1,91 @@
+
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+    <div className="bg-gray-900 text-white">
+      <main className="flex flex-col items-center justify-center min-h-screen p-8 text-center">
+        <div className="max-w-4xl">
+          <h1 className="text-6xl font-bold tracking-tight mb-4">
+            Turn Your Passion into a Business
+          </h1>
+          <p className="text-xl text-gray-400 mb-8">
+            Nexus Singularity provides you with the tools and resources to monetize your hobbies and interests.
+          </p>
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#"
+            className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition-colors duration-300"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+            Get Started
           </a>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      <section id="how-it-works" className="bg-gray-800 py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-12">How It Works</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+            <div className="flex flex-col items-center">
+              <div className="bg-purple-600 rounded-full p-4 mb-4">
+                <Image src="/lightbulb.svg" alt="Passion Discovery" width={40} height={40} />
+              </div>
+              <h3 className="text-2xl font-bold mb-2">Discover Your Passion</h3>
+              <p className="text-gray-400">Identify your interests and strengths to find the perfect business idea.</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className="bg-purple-600 rounded-full p-4 mb-4">
+                <Image src="/file.svg" alt="Business Plan" width={40} height={40} />
+              </div>
+              <h3 className="text-2xl font-bold mb-2">Create a Business Plan</h3>
+              <p className="text-gray-400">Our tools will help you generate a solid business plan to guide your journey.</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className="bg-purple-600 rounded-full p-4 mb-4">
+                <Image src="/users.svg" alt="Community Hub" width={40} height={40} />
+              </div>
+              <h3 className="text-2xl font-bold mb-2">Connect with a Community</h3>
+              <p className="text-gray-400">Join a supportive community of entrepreneurs and mentors.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" className="py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-12">Features</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-gray-800 rounded-lg p-8">
+              <h3 className="text-2xl font-bold mb-4">Passion Discovery</h3>
+              <p className="text-gray-400">Our interactive tools help you explore your interests and find profitable business ideas.</p>
+            </div>
+            <div className="bg-gray-800 rounded-lg p-8">
+              <h3 className="text-2xl font-bold mb-4">Business Plan Generator</h3>
+              <p className="text-gray-400">Automatically generate a comprehensive business plan tailored to your venture.</p>
+            </div>
+            <div className="bg-gray-800 rounded-lg p-8">
+              <h3 className="text-2xl font-bold mb-4">Community Hub</h3>
+              <p className="text-gray-400">Connect with like-minded individuals, ask questions, and get feedback.</p>
+            </div>
+            <div className="bg-gray-800 rounded-lg p-8">
+              <h3 className="text-2xl font-bold mb-4">Resource Library</h3>
+              <p className="text-gray-400">Access a curated library of articles, guides, and courses to help you succeed.</p>
+            </div>
+            <div className="bg-gray-800 rounded-lg p-8">
+              <h3 className="text-2xl font-bold mb-4">Mentor Matching</h3>
+              <p className="text-gray-400">Get paired with an experienced mentor to guide you on your journey.</p>
+            </div>
+            <div className="bg-gray-800 rounded-lg p-8">
+              <h3 className="text-2xl font-bold mb-4">Funding Opportunities</h3>
+              <p className="text-gray-400">Discover funding opportunities to help you launch and grow your business.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer className="bg-gray-800 py-8">
+        <div className="container mx-auto px-4 text-center text-gray-400">
+          <p>&copy; 2023 Nexus Singularity. All rights reserved.</p>
+        </div>
       </footer>
     </div>
   );
